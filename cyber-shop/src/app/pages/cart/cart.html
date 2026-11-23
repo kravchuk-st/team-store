@@ -1,0 +1,64 @@
+<section class="mx-auto max-w-xl px-5 pt-8">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h1 class="m-0 text-2xl font-medium">Корзина</h1>
+      <p class="mt-1.5 mb-0 text-sm text-muted">Товары, которые вы добавили.</p>
+    </div>
+
+    @if (!isEmpty()) {
+      <button
+        type="button"
+        class="cursor-pointer rounded-xs border border-line bg-transparent px-3 py-2 text-sm text-muted hover:border-line-strong hover:text-ink"
+        (click)="clear()"
+      >
+        [ Очистить ]
+      </button>
+    }
+  </div>
+
+  @if (isEmpty()) {
+    <p class="mt-10 mb-0 text-muted">Корзина пуста.</p>
+    <a
+      routerLink="/catalog"
+      class="mt-4 inline-block rounded-xs border border-ice px-2.5 py-1.5 text-sm text-ice"
+    >
+      [ Каталог ]
+    </a>
+  } @else {
+    <ul class="mt-8 mb-0 flex list-none flex-col gap-2 p-0">
+      @for (item of items(); track item.id) {
+        <li
+          class="flex items-center justify-between gap-4 rounded-xs border border-line bg-panel px-3.5 py-3"
+        >
+          <div>
+            <p class="m-0 text-base">{{ item.name }}</p>
+            <p class="mt-0.5 mb-0 text-sm text-muted">{{ item.category }}</p>
+          </div>
+          <div class="flex items-center gap-3.5 text-sm text-ice">
+            <span>{{ item.price }} ¥</span>
+            <button
+              type="button"
+              class="cursor-pointer rounded-xs border border-line bg-transparent px-3 py-2 text-sm text-muted hover:border-line-strong hover:text-ink"
+              (click)="remove(item.id)"
+            >
+              [ Удалить ]
+            </button>
+          </div>
+        </li>
+      }
+    </ul>
+
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-5">
+      <p class="m-0 text-lg">
+        Итого <span class="text-ice">{{ total() }} ¥</span>
+      </p>
+      <a
+        routerLink="/checkout"
+        class="rounded-xs border border-ice px-2.5 py-1.5 text-sm text-ice hover:bg-ice hover:text-deep"
+      >
+        [ Оформление ]
+      </a>
+    </div>
+  }
+</section>
+
