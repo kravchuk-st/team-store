@@ -1,0 +1,58 @@
+<header class="border-b border-line bg-panel">
+  <div
+    class="mx-auto grid max-w-page grid-cols-[auto_1fr_auto] items-center gap-x-8 gap-y-3 px-5 py-4 max-[800px]:grid-cols-2 max-[800px]:gap-x-4 max-[800px]:gap-y-3"
+  >
+    <a
+      routerLink="/about"
+      class="inline-flex items-center gap-2.5 whitespace-nowrap text-lg font-medium tracking-wide text-ice hover:text-ice-bright max-[800px]:col-start-1"
+    >
+      <img
+        src="/brand/logo-chip-violet.png"
+        alt=""
+        width="28"
+        height="28"
+        class="h-7 w-7 shrink-0 [image-rendering:pixelated]"
+        aria-hidden="true"
+      />
+      <span>implant.shop</span>
+    </a>
+
+    <nav
+      class="flex flex-wrap justify-center gap-5 text-base text-muted max-[800px]:col-span-2 max-[800px]:justify-start"
+      aria-label="Основная навигация"
+    >
+      <a routerLink="/about" routerLinkActive="text-ice" class="hover:text-ink">о нас</a>
+      <a routerLink="/catalog" routerLinkActive="text-ice" class="hover:text-ink">каталог</a>
+      <a routerLink="/cart" routerLinkActive="text-ice" class="hover:text-ink">корзина</a>
+    </nav>
+
+    <div class="flex items-center gap-3.5 max-[800px]:col-start-2 max-[800px]:justify-end">
+      <span class="text-base text-muted">Гость</span>
+      <a
+        routerLink="/cart"
+        class="inline-flex items-center gap-2 whitespace-nowrap text-base text-ice hover:text-ice-bright"
+        aria-label="Корзина, товаров: {{ cartCount() }}"
+      >
+        <svg
+          class="h-5 w-5 shrink-0"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.75"
+          stroke-linecap="square"
+          aria-hidden="true"
+        >
+          <path d="M6 6h15l-1.5 9h-12z" />
+          <path d="M6 6 5 3H2" />
+          <circle cx="9" cy="20" r="1.25" fill="currentColor" stroke="none" />
+          <circle cx="18" cy="20" r="1.25" fill="currentColor" stroke="none" />
+        </svg>
+        <span
+          class="inline-flex min-w-6 items-center justify-center rounded-xs bg-ice px-1.5 py-0.5 text-sm font-semibold leading-none text-deep"
+        >
+          {{ cartCount() }}
+        </span>
+      </a>
+    </div>
+  </div>
+</header>

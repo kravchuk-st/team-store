@@ -1,0 +1,32 @@
+<article class="flex h-full flex-col overflow-hidden rounded-xs border border-line bg-panel">
+  <div class="aspect-[4/3] bg-image">
+    <img
+      class="h-full w-full object-cover"
+      [src]="implant().imageUrl"
+      [alt]="implant().name"
+      width="320"
+      height="240"
+    />
+  </div>
+
+  <div class="flex flex-1 flex-col gap-2.5 px-3.5 pb-4 pt-3.5">
+    <h2 class="m-0 text-base font-medium leading-snug text-ink">{{ implant().name }}</h2>
+    <p class="m-0 flex-1 text-sm leading-relaxed text-muted">
+      {{ implant().category }}
+      <br />
+      {{ implant().description }}
+    </p>
+
+    <div class="mt-auto flex flex-col gap-2">
+      <p class="m-0 text-base text-ice">{{ implant().price }} ¥</p>
+      <button
+        type="button"
+        class="cursor-pointer self-start rounded-xs border border-ice bg-transparent px-3 py-2 text-sm text-ice hover:bg-ice hover:text-deep disabled:cursor-not-allowed disabled:border-line-strong disabled:text-dim disabled:hover:bg-transparent"
+        [disabled]="inCart()"
+        (click)="onAdd()"
+      >
+        {{ inCart() ? '[ В корзине ]' : '[ В корзину ]' }}
+      </button>
+    </div>
+  </div>
+</article>

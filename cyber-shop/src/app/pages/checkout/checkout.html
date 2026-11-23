@@ -1,0 +1,58 @@
+<section class="mx-auto max-w-xl px-5 pt-8">
+  <h1 class="m-0 text-2xl font-medium">Оформление</h1>
+  <p class="mt-1.5 mb-0 text-sm text-muted">Промокод действует на всю сумму корзины.</p>
+
+  @if (isEmpty()) {
+    <p class="mt-10 mb-0 text-muted">Корзина пуста — нечего оформлять.</p>
+    <a
+      routerLink="/catalog"
+      class="mt-4 inline-block rounded-xs border border-ice px-2.5 py-1.5 text-sm text-ice"
+    >
+      [ Каталог ]
+    </a>
+  } @else {
+    <div class="mt-8 flex flex-col gap-4">
+      <label class="flex flex-col gap-1.5 text-sm text-muted">
+        <span>Промокод</span>
+        <input
+          type="text"
+          placeholder="например NEURAL10"
+          class="rounded-xs border border-line bg-panel px-3 py-2 text-ink outline-none placeholder:text-dim focus:border-ice-dim"
+          [ngModel]="promoCode()"
+          (ngModelChange)="onPromoInput($event)"
+        />
+      </label>
+
+      <button
+        type="button"
+        class="self-start cursor-pointer rounded-xs border border-ice bg-transparent px-3 py-2 text-sm text-ice hover:bg-ice hover:text-deep"
+        (click)="apply()"
+      >
+        [ Применить ]
+      </button>
+
+      @if (appliedCode() && !discountApplied()) {
+        <p class="m-0 text-sm text-muted">Промокод не найден — сумма без скидки.</p>
+      }
+      @if (discountApplied()) {
+        <p class="m-0 text-sm text-ice">Скидка по коду {{ appliedCode().toUpperCase() }} применена.</p>
+      }
+    </div>
+
+    <div class="mt-8 space-y-2 border-t border-line pt-5">
+      <p class="m-0 text-muted">
+        Сумма <span class="text-ink">{{ subtotal() }} ¥</span>
+      </p>
+      <p class="m-0 text-lg">
+        Итого <span class="text-ice">{{ total() }} ¥</span>
+      </p>
+    </div>
+
+    <a
+      routerLink="/cart"
+      class="mt-6 inline-block rounded-xs border border-line px-2.5 py-1.5 text-sm text-muted hover:border-line-strong hover:text-ink"
+    >
+      [ Назад в корзину ]
+    </a>
+  }
+</section>

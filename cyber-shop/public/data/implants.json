@@ -1,0 +1,227 @@
+[
+  {
+    "id": "head-1",
+    "name": "Оптика «Ирис»",
+    "description": "Ночное зрение и HUD-оверлей",
+    "category": "head",
+    "type": "C",
+    "compatibleTypes": [
+      "C",
+      "D"
+    ],
+    "price": 4200,
+    "imageUrl": "/implants/head-1.png",
+    "incompatibleWith": [
+      "head-3"
+    ],
+    "recommendedWith": [
+      "chip-1",
+      "body-2"
+    ]
+  },
+  {
+    "id": "head-2",
+    "name": "Аудио-модуль «Эхо»",
+    "description": "Усиленный слух и шумоподавление",
+    "category": "head",
+    "type": "D",
+    "compatibleTypes": [
+      "C",
+      "D",
+      "F"
+    ],
+    "price": 3100,
+    "imageUrl": "/implants/head-2.png",
+    "incompatibleWith": [],
+    "recommendedWith": [
+      "chip-2"
+    ]
+  },
+  {
+    "id": "head-3",
+    "name": "Нейролинк «Синапс»",
+    "description": "Прямой интерфейс к сети и ускоренная реакция",
+    "category": "head",
+    "type": "F",
+    "compatibleTypes": [
+      "F"
+    ],
+    "price": 5800,
+    "imageUrl": "/implants/head-3.png",
+    "incompatibleWith": [
+      "head-1"
+    ],
+    "recommendedWith": [
+      "chip-3",
+      "chip-4"
+    ]
+  },
+  {
+    "id": "body-1",
+    "name": "Каркас «Титан»",
+    "description": "Усиленный скелет и защита торса",
+    "category": "body",
+    "type": "C",
+    "compatibleTypes": [
+      "C",
+      "D"
+    ],
+    "price": 6500,
+    "imageUrl": "/implants/body-1.png",
+    "incompatibleWith": [
+      "body-3"
+    ],
+    "recommendedWith": [
+      "legs-1"
+    ]
+  },
+  {
+    "id": "body-2",
+    "name": "Сердце «Пульсар»",
+    "description": "Стабильный кровоток и +выносливость",
+    "category": "body",
+    "type": "D",
+    "compatibleTypes": [
+      "C",
+      "D"
+    ],
+    "price": 7200,
+    "imageUrl": "/implants/body-2.png",
+    "incompatibleWith": [],
+    "recommendedWith": [
+      "head-1",
+      "chip-1"
+    ]
+  },
+  {
+    "id": "body-3",
+    "name": "Пластинчат «Щит»",
+    "description": "Бронепластины на корпусе",
+    "category": "body",
+    "type": "F",
+    "compatibleTypes": [
+      "F",
+      "D"
+    ],
+    "price": 5400,
+    "imageUrl": "/implants/body-3.png",
+    "incompatibleWith": [
+      "body-1"
+    ],
+    "recommendedWith": [
+      "legs-2"
+    ]
+  },
+  {
+    "id": "legs-1",
+    "name": "Сервоприводы «Спринт»",
+    "description": "+20% к бегу и прыжку",
+    "category": "legs",
+    "type": "C",
+    "compatibleTypes": [
+      "C",
+      "D"
+    ],
+    "price": 4800,
+    "imageUrl": "/implants/legs-1.png",
+    "incompatibleWith": [
+      "legs-2"
+    ],
+    "recommendedWith": [
+      "body-1",
+      "chip-2"
+    ]
+  },
+  {
+    "id": "legs-2",
+    "name": "Гидроопоры «Якорь»",
+    "description": "Стабильность на любой поверхности",
+    "category": "legs",
+    "type": "D",
+    "compatibleTypes": [
+      "C",
+      "D",
+      "F"
+    ],
+    "price": 3900,
+    "imageUrl": "/implants/legs-2.png",
+    "incompatibleWith": [
+      "legs-1"
+    ],
+    "recommendedWith": [
+      "body-3"
+    ]
+  },
+  {
+    "id": "chip-1",
+    "name": "Чип «Фокус»",
+    "description": "Улучшенная концентрация и HUD-синхронизация",
+    "category": "chip",
+    "type": "C",
+    "compatibleTypes": [
+      "C",
+      "D",
+      "F"
+    ],
+    "price": 1500,
+    "imageUrl": "/implants/chip-1.png",
+    "incompatibleWith": [],
+    "recommendedWith": [
+      "head-1",
+      "body-2"
+    ]
+  },
+  {
+    "id": "chip-2",
+    "name": "Чип «Рефлекс»",
+    "description": "Ускоренная мышечная реакция",
+    "category": "chip",
+    "type": "D",
+    "compatibleTypes": [
+      "C",
+      "D",
+      "F"
+    ],
+    "price": 1800,
+    "imageUrl": "/implants/chip-2.png",
+    "incompatibleWith": [],
+    "recommendedWith": [
+      "legs-1",
+      "head-2"
+    ]
+  },
+  {
+    "id": "chip-3",
+    "name": "Чип «Шифр»",
+    "description": "Защита нейролинка и шифрование канала",
+    "category": "chip",
+    "type": "F",
+    "compatibleTypes": [
+      "F"
+    ],
+    "price": 2200,
+    "imageUrl": "/implants/chip-3.png",
+    "incompatibleWith": [],
+    "recommendedWith": [
+      "head-3"
+    ]
+  },
+  {
+    "id": "chip-4",
+    "name": "Чип «Перегрузка»",
+    "description": "Краткий буст всех систем",
+    "category": "chip",
+    "type": "F",
+    "compatibleTypes": [
+      "D",
+      "F"
+    ],
+    "price": 2500,
+    "imageUrl": "/implants/chip-4.png",
+    "incompatibleWith": [],
+    "recommendedWith": [
+      "head-3",
+      "chip-3"
+    ]
+  }
+]
