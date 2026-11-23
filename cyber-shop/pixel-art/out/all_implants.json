@@ -1,0 +1,314 @@
+{
+ "frames": {
+  "favicon": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 18
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 18,
+    "h": 18
+   },
+   "sourceSize": {
+    "w": 18,
+    "h": 18
+   }
+  },
+  "head-2": {
+   "frame": {
+    "x": 20,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "logo_iris": {
+   "frame": {
+    "x": 56,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "logo_bracket": {
+   "frame": {
+    "x": 92,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "head-1": {
+   "frame": {
+    "x": 0,
+    "y": 36,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "head-3": {
+   "frame": {
+    "x": 36,
+    "y": 36,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "body-1": {
+   "frame": {
+    "x": 72,
+    "y": 36,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "body-2": {
+   "frame": {
+    "x": 108,
+    "y": 36,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "body-3": {
+   "frame": {
+    "x": 0,
+    "y": 72,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "legs-1": {
+   "frame": {
+    "x": 36,
+    "y": 72,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "legs-2": {
+   "frame": {
+    "x": 72,
+    "y": 72,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "chip-1": {
+   "frame": {
+    "x": 108,
+    "y": 72,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "chip-2": {
+   "frame": {
+    "x": 0,
+    "y": 108,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "chip-3": {
+   "frame": {
+    "x": 36,
+    "y": 108,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  },
+  "chip-4": {
+   "frame": {
+    "x": 72,
+    "y": 108,
+    "w": 34,
+    "h": 34
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 34,
+    "h": 34
+   },
+   "sourceSize": {
+    "w": 34,
+    "h": 34
+   }
+  }
+ },
+ "meta": {
+  "app": "pxl",
+  "image": "all_implants.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 142,
+   "h": 142
+  },
+  "scale": "1"
+ }
+}
